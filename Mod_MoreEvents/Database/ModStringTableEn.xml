@@ -1,0 +1,23 @@
+<Database>
+	<GameDBStringTable ID="ADDON_MOD_JM_MOREEVENTS">
+	<LanguageCode>en</LanguageCode>
+	<LanguageNameLocalized>English</LanguageNameLocalized>
+	<Contributors>
+	<Name>James B</Name>
+	</Contributors>
+
+	<LocalizedStrings>
+		
+	<GameDBLocalizedString>      
+	<LocID>ADDON_MOD_JM_MOREEVENTS</LocID>                       	
+	<Text>More Events</Text>  
+	</GameDBLocalizedString>
+	
+
+	
+
+
+	</LocalizedStrings>
+	</GameDBStringTable>
+</Database>
+

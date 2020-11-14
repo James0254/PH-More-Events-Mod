@@ -1,0 +1,135 @@
+﻿<!--  
+    MORE_PATIENTS_FOR_A_RANDOM_DEPARTMENT_PERCENT,
+    MODIFIED_PATIENT_NUMBERS_PERCENT,
+    MODIFIED_INSURANCE_PAYMENTS_PERCENT,
+    MODIFIED_DIAGNOSIS_TYPES, // trauma/disease  -->
+
+<Database>
+    <GameDBWorldEvent ID="MOD_WORLD_EVENT_CIVIL_WAR_CRISIS">
+        <DescriptionID>MOD_WORLD_EVENT_CIVIL_WAR_CRISIS_TEXT</DescriptionID>
+        <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
+		<Tag>trauma</Tag>
+        <ModifierMin>40</ModifierMin>
+        <ModifierMax>70</ModifierMax>
+        <DurationDaysMin>1</DurationDaysMin>
+        <DurationDaysMin>14</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+	
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_WAR">
+        <DescriptionID>MOD_WORLD_EVENT_WAR_TEXT</DescriptionID>
+        <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
+		<Tag>trauma</Tag>
+        <ModifierMin>40</ModifierMin>
+        <ModifierMax>70</ModifierMax>
+        <DurationDaysMin>1</DurationDaysMin>
+        <DurationDaysMin>14</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+	
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_PROTESTS">
+        <DescriptionID>MOD_WORLD_EVENT_PROTESTS_TEXT</DescriptionID>
+        <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
+		<Tag>trauma</Tag>
+        <ModifierMin>20</ModifierMin>
+        <ModifierMax>40</ModifierMax>
+        <DurationDaysMin>1</DurationDaysMin>
+        <DurationDaysMin>7</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+	
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_EPIDEMIC">
+        <DescriptionID>MOD_WORLD_EVENT_EPIDEMIC_TEXT</DescriptionID>
+        <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
+		<Tag>disease</Tag>
+        <ModifierMin>20</ModifierMin>
+        <ModifierMax>50</ModifierMax>
+        <DurationDaysMin>1</DurationDaysMin>
+        <DurationDaysMin>7</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+	
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_BUDGET_CUT">
+        <DescriptionID>MOD_WORLD_EVENT_BUDGET_CUT_TEXT</DescriptionID>
+        <Type>MODIFIED_INSURANCE_PAYMENTS_PERCENT</Type>
+        <ModifierMin>-30</ModifierMin>
+        <ModifierMax>-10</ModifierMax>
+        <DurationDaysMin>2</DurationDaysMin>
+        <DurationDaysMin>5</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+	
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_BUDGET_INCREASE">
+        <DescriptionID>MOD_WORLD_EVENT_BUDGET_INCREASE_TEXT</DescriptionID>
+        <Type>MODIFIED_INSURANCE_PAYMENTS_PERCENT</Type>
+        <ModifierMin>20</ModifierMin>
+        <ModifierMax>40</ModifierMax>
+        <DurationDaysMin>2</DurationDaysMin>
+        <DurationDaysMin>5</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+	
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_KAREN_STRIKES">
+        <DescriptionID>MOD_WORLD_EVENT_KAREN_STRIKES_TEXT</DescriptionID>
+        <Type>MODIFIED_PATIENT_NUMBERS_PERCENT</Type>
+        <ModifierMin>-10</ModifierMin>
+        <ModifierMax>-20</ModifierMax>
+        <DurationDaysMin>2</DurationDaysMin>
+        <DurationDaysMin>5</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+	
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_TERRORISISM">
+        <DescriptionID>MOD_WORLD_EVENT_TERRORISISM_TEXT</DescriptionID>
+        <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
+        <Tag>trauma</Tag>
+        <ModifierMin>20</ModifierMin>
+        <ModifierMax>40</ModifierMax>
+        <DurationDaysMin>2</DurationDaysMin>
+        <DurationDaysMin>7</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+	
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_MURDERER">
+        <DescriptionID>MOD_WORLD_EVENT_MURDERER_TEXT</DescriptionID>
+        <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
+        <Tag>trauma</Tag>
+        <ModifierMin>1</ModifierMin>
+        <ModifierMax>10</ModifierMax>
+        <DurationDaysMin>2</DurationDaysMin>
+        <DurationDaysMin>4</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+
+    <!-- GameDBWorldEvent ID="DLC_WORLD_EVENT_OTHER_HOSPITAL_CLOSED">
+        <DescriptionID>DLC_WORLD_EVENT_OTHER_HOSPITAL_CLOSED_TEXT</DescriptionID>
+        <Type>MODIFIED_PATIENT_NUMBERS_PERCENT</Type>
+        <ModifierMin>10</ModifierMin>
+        <ModifierMax>30</ModifierMax>
+        <DurationDaysMin>2</DurationDaysMin>
+        <DurationDaysMin>5</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+
+    <GameDBWorldEvent ID="DLC_WORLD_EVENT_PUBLIC_HEALTH_REFORM">
+        <DescriptionID>DLC_WORLD_EVENT_PUBLIC_HEALTH_REFORM_TEXT</DescriptionID>
+        <Type>MODIFIED_INSURANCE_PAYMENTS_PERCENT</Type>
+        <ModifierMin>10</ModifierMin>
+        <ModifierMax>30</ModifierMax>
+        <DurationDaysMin>2</DurationDaysMin>
+        <DurationDaysMin>5</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent>
+
+    <GameDBWorldEvent ID="DLC_WORLD_EVENT_BANK_HOLIDAYS">
+        <DescriptionID>DLC_WORLD_EVENT_BANK_HOLIDAYS_TEXT</DescriptionID>
+        <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
+        <Tag>trauma</Tag>
+        <ModifierMin>20</ModifierMin>
+        <ModifierMax>50</ModifierMax>
+        <DurationDaysMin>1</DurationDaysMin>
+        <DurationDaysMin>1</DurationDaysMin>
+        <IconIndex>452</IconIndex>
+    </GameDBWorldEvent -->
+
+</Database>

@@ -1,0 +1,19 @@
+﻿<Database>
+    <GameDBStringTable ID="LOC_EN_ADDON_MOREEVENTS_NAMES">
+        
+        <LanguageCode>en</LanguageCode>
+        <LanguageNameLocalized>English</LanguageNameLocalized>
+
+        <Contributors>
+            <Name>James B</Name>
+        </Contributors>
+        
+        <LocalizedStrings>           
+            <!-- Insurance companies -->
+            <GameDBLocalizedString>    <LocID>IN_COM_MODEVE_RECS</LocID>             <Text>Red Cross Disaster Relief</Text>  </GameDBLocalizedString>
+        </LocalizedStrings>
+    </GameDBStringTable>
+
+</Database>
+
+   

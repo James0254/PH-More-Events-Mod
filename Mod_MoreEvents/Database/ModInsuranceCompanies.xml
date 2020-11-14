@@ -1,0 +1,319 @@
+﻿<Database>
+    <!--
+    Objectives
+    ==========
+    TREATED_PATIENTS,
+    TODO TREATED_IMMOBILE_PATIENTS
+    TREATED_PATIENTS_PER_DAY,
+    TREATMENT_SUCCESS_RATE,
+    TREATED_PATIENTS_PER_DAY_AT_DEPARTMENT,
+    WORKING_ROOMS,
+    WORKING_CLINIC_AT_DEPARTMENT,
+    WORKING_HOSPITALIZATION_AT_DEPARTMENT,
+    PRESTIGE (in percent)
+    PRESTIGE_AT_DEPARTMENT (in percent)
+    NUMBER_OF_AMBULANCES
+    BALANCE
+    BANK_BALANCE
+    PROFITABLE_DAYS
+    PROFIT_PER_DAY_AT_DEPARTMENT (in dollars)
+    
+    (Patch 1.1)
+    SAVE_PATIENT_AFTER_COLLAPSES,
+    WORKING_CLINIC_AT_ANY_SPECIALIZED_DEPARTMENT,
+    WORKING_HOSPITALIZATION_AT_ANY_SPECIALIZED_DEPARTMENT,
+    PRESTIGE_AT_ANY_SPECIALIZED_DEPARTMENT,
+    TREATED_PATIENTS_PER_DAY_AT_ANY_SPECIALIZED_DEPARTMENT,
+    PERFORM_SURGERY,
+    SUCCESSFUL_EVENTS_OF_TYPE,
+    SUCCESSFUL_EVENTS_IN_ROW,
+    NUMBER_OF_FULLY_WORKING_DEPARTMENTS,
+    NO_PATIENTS_SENT_AWAY_OR_WENT_AWAY_DAYS,
+    NO_DEAD_PATIENTS_DAYS
+    
+    Rewards
+    ==========
+    NONE,
+    UNLOCK_ROOM,
+    UNLOCK_DEPARTMENT,
+    UNLOCK_DEPARTMENT_HOSPITALIZATION,
+    MONEY_GRANT,
+    MORE_MOBILE_PATIENTS,
+    MORE_IMMOBILE_PATIENTS,
+    UNLOCK_AMBULANCES
+    GET_GREAT_INTERNS,
+    
+    (Patch 1.1)
+    PRESTIGE_BONUS (use RewardParam as percent and RewardDuration as days)
+    UNLOCK_ALL_HOSPITALIZATIONS,
+    SET_MOBILE_PATIENT_COUNT,
+    SET_IMMOBILE_PATIENT_COUNT,
+    UNLOCK_EVENTS,
+    UNLOCK_RANDOM_EVENTS
+     -->
+
+    <GameDBInsuranceCompany ID="IN_COM_MOD_EVENTS_RECS"> <!-- RED CROSS -->
+        <NameLocID>IN_COM_MODEVE_RECS</NameLocID>
+        <IconIndex>2305</IconIndex>
+
+        <Requirements>
+            <Requirement>
+                <ConditionType>NUMBER_OF_AMBULANCES</ConditionType>
+                <ConditionValue>4</ConditionValue>
+				<Hidden>true</Hidden>
+            </Requirement>
+        </Requirements>
+        
+        <Objectives>
+            <Objective>
+                <Requirement>
+                    <ConditionType>SAVE_PATIENT_AFTER_COLLAPSES</ConditionType>
+                    <ConditionValue>1</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>MONEY_GRANT</RewardType>
+                    <RewardParam>1000</RewardParam>
+                </Reward>
+            </Objective>
+
+            <Objective>
+                <Requirement>
+                    <ConditionType>SAVE_PATIENT_AFTER_COLLAPSES</ConditionType>
+                    <ConditionValue>2</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>MONEY_GRANT</RewardType>
+                    <RewardParam>2000</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>SAVE_PATIENT_AFTER_COLLAPSES</ConditionType>
+                    <ConditionValue>3</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>MONEY_GRANT</RewardType>
+                    <RewardParam>3000</RewardParam>
+                </Reward>
+            </Objective>
+
+            <Objective>
+                <Requirement>
+                    <ConditionType>NO_PATIENTS_SENT_AWAY_OR_WENT_AWAY_DAYS</ConditionType>
+                    <ConditionValue>1</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_MOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>12</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>NO_PATIENTS_SENT_AWAY_OR_WENT_AWAY_DAYS</ConditionType>
+                    <ConditionValue>2</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_MOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>14</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>NO_PATIENTS_SENT_AWAY_OR_WENT_AWAY_DAYS</ConditionType>
+                    <ConditionValue>3</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_MOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>16</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>NO_PATIENTS_SENT_AWAY_OR_WENT_AWAY_DAYS</ConditionType>
+                    <ConditionValue>4</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_MOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>16</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>NO_PATIENTS_SENT_AWAY_OR_WENT_AWAY_DAYS</ConditionType>
+                    <ConditionValue>5</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_IMMOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>4</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>NO_PATIENTS_SENT_AWAY_OR_WENT_AWAY_DAYS</ConditionType>
+                    <ConditionValue>6</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_IMMOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>5</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>NO_PATIENTS_SENT_AWAY_OR_WENT_AWAY_DAYS</ConditionType>
+                    <ConditionValue>7</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_IMMOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>6</RewardParam>
+                </Reward>
+            </Objective>
+            
+            <Objective>
+                <Requirement>
+                    <ConditionType>PERFORM_SURGERY</ConditionType>
+                    <ConditionValue>5</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>UNLOCK_EVENTS</RewardType>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_IN_ROW</ConditionType>
+                	<ConditionValue>5</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>PRESTIGE_BONUS</RewardType>
+                    <RewardParam>20</RewardParam>
+                    <RewardDuration>5</RewardDuration>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_OF_TYPE</ConditionType>
+                    <ConditionDatabaseID>EVENT_PANDEMIC</ConditionDatabaseID>
+                	<ConditionValue>1</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>PRESTIGE_BONUS</RewardType>
+                    <RewardParam>20</RewardParam>
+                    <RewardDuration>1</RewardDuration>
+                </Reward>
+            </Objective>
+
+            <Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_OF_TYPE</ConditionType>
+                    <ConditionDatabaseID>EVENT_NATURAL_DISASTER</ConditionDatabaseID>
+                	<ConditionValue>1</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>PRESTIGE_BONUS</RewardType>
+                    <RewardParam>20</RewardParam>
+                    <RewardDuration>2</RewardDuration>
+                </Reward>
+            </Objective>
+
+            <Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_OF_TYPE</ConditionType>
+                    <ConditionDatabaseID>EVENT_CRASH</ConditionDatabaseID>
+                	<ConditionValue>1</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_IMMOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>8</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>NUMBER_OF_AMBULANCES</ConditionType>
+                    <ConditionValue>6</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_IMMOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>3</RewardParam>
+                </Reward>
+            </Objective>
+
+            <Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_IN_ROW</ConditionType>
+                	<ConditionValue>5</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>MONEY_GRANT</RewardType>
+                    <RewardParam>30000</RewardParam>
+                </Reward>
+            </Objective>
+
+            <Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_IN_ROW</ConditionType>
+                	<ConditionValue>10</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>MONEY_GRANT</RewardType>
+                    <RewardParam>300000</RewardParam>
+                </Reward>
+            </Objective>
+			
+			<Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_OF_TYPE</ConditionType>
+                    <ConditionDatabaseID>EVENT_PANDEMIC</ConditionDatabaseID>
+                	<ConditionValue>3</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>PRESTIGE_BONUS</RewardType>
+                    <RewardParam>20</RewardParam>
+                    <RewardDuration>1</RewardDuration>
+                </Reward>
+            </Objective>
+
+            <Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_OF_TYPE</ConditionType>
+                    <ConditionDatabaseID>EVENT_NATURAL_DISASTER</ConditionDatabaseID>
+                	<ConditionValue>3</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>PRESTIGE_BONUS</RewardType>
+                    <RewardParam>20</RewardParam>
+                    <RewardDuration>2</RewardDuration>
+                </Reward>
+            </Objective>
+
+            <Objective>
+                <Requirement>
+                    <ConditionType>SUCCESSFUL_EVENTS_OF_TYPE</ConditionType>
+                    <ConditionDatabaseID>EVENT_CRASH</ConditionDatabaseID>
+                	<ConditionValue>3</ConditionValue>
+                </Requirement>
+                <Reward>
+                    <RewardType>SET_IMMOBILE_PATIENT_COUNT</RewardType>
+                    <RewardParam>8</RewardParam>
+                </Reward>
+            </Objective>
+
+        </Objectives>
+        
+        <PatientsPerDay>10</PatientsPerDay>
+        <ImmobilePerDay>2</ImmobilePerDay>
+        
+        <CoverCostPercent>20</CoverCostPercent>
+        <UnlockCompany>UNLOCK_JM_RCES</UnlockCompany> 
+    </GameDBInsuranceCompany>
+
+</Database>
+
