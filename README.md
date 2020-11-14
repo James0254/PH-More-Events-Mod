@@ -1,0 +1,2 @@
+# PH-More-Events-Mod
+From Bubonic Plague Epidemics to Nuclear Meltdowns to Explosion on a Ship, this mod adds a ton more events! And it also comes with the Red Cross Disaster Relief Insurance  In this mod, you'll have a vast amount of events and a whole new insurance company. This mod adds 30 events, 9 world events and a new insurance company. This mod is still under development and More Events will be added soon.
