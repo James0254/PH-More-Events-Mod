@@ -79,8 +79,8 @@
         <IconIndex>452</IconIndex>
     </GameDBWorldEvent>
 	
-	<GameDBWorldEvent ID="MOD_WORLD_EVENT_TERRORISISM">
-        <DescriptionID>MOD_WORLD_EVENT_TERRORISISM_TEXT</DescriptionID>
+	<GameDBWorldEvent ID="MOD_WORLD_EVENT_TERRORISM">
+        <DescriptionID>MOD_WORLD_EVENT_TERRORISM_TEXT</DescriptionID>
         <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
         <Tag>trauma</Tag>
         <ModifierMin>20</ModifierMin>
