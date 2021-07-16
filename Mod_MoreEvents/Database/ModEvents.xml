@@ -44,14 +44,15 @@
     <GameDBEventVariation ID="MOD_JM_EVENT_AEROPLANE_CRASH">
         <DescriptionLocID>MOD_JM_EVENT_AEROPLANE_CRASH_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>20</PatientCount>
-        <DurationHours>36</DurationHours>
+        <PatientCount>6</PatientCount>
+        <DurationHours>7</DurationHours>
 		<PatientPercentage>20</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
@@ -59,33 +60,50 @@
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
+		    <!-- TRAUMATOLOGY -->
+            <MedicalConditionRef>TRM_003</MedicalConditionRef>
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+          	<MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>			
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
+			<MedicalConditionRef>TRM_017</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
+			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
+	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PLPX</MedicalConditionRef>
+			
+			<!-- EMERGENCY -->
+			<MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			
+			<!-- CARDIO -->
+			<MedicalConditionRef>TRM_BCI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TCA</MedicalConditionRef>
+			<MedicalConditionRef>TRM_FLC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TAR</MedicalConditionRef>
+			
+			<!-- IM -->
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			
+			<!-- NEURO -->
+			<MedicalConditionRef>TRM_CCS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CTS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_DAI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TBI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_AIH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -117,68 +135,45 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_REMOTE_PLANE_CRASH">
         <DescriptionLocID>MOD_JM_EVENT_REMOTE_PLANE_CRASH_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>5</PatientCount>
-        <DurationHours>10</DurationHours>
-		<PatientPercentage>10</PatientPercentage>
-        <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
+        <PatientCount>3</PatientCount>
+        <DurationHours>5</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
-			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+			
+			<!-- EMERGENCY -->
+			<MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -210,68 +205,62 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_LORRY_ACCIDENT">
         <DescriptionLocID>MOD_JM_EVENT_LORRY_ACCIDENT_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>6</PatientCount>
-        <DurationHours>12</DurationHours>
+        <PatientCount>5</PatientCount>
+        <DurationHours>7</DurationHours>
 		<PatientPercentage>20</PatientPercentage>
         <PatientOccupation>OCCUPATION_POLICE</PatientOccupation>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
+		    <!-- TRAUMATOLOGY -->
+            <MedicalConditionRef>TRM_003</MedicalConditionRef>
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+          	<MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-         	<MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_017</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
+			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
+	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PLPX</MedicalConditionRef>
+			
+			<!-- EMERGENCY -->
+			<MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -303,68 +292,31 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 	
-	<GameDBEventVariation ID="MOD_JM_EVENT_SINKING_SHIP">
+	<GameDBEventVariation ID="MOD_JM_EVENT_SINKING_SHIP"> 
         <DescriptionLocID>MOD_JM_EVENT_SINKING_SHIP_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>20</PatientCount>
-        <DurationHours>40</DurationHours>
+        <PatientCount>4</PatientCount>
+        <DurationHours>6</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
-			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-         	<MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+		    <!-- Emergency -->
+		    <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -376,18 +328,11 @@
             <MedicalConditionRef>TRM_DLA</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACL</MedicalConditionRef>
             <MedicalConditionRef>TRM_SFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFU</MedicalConditionRef>
             <MedicalConditionRef>TRM_SFR</MedicalConditionRef>
             <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_BRR</MedicalConditionRef>
             <MedicalConditionRef>TRM_SFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFF</MedicalConditionRef>
             <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_SPT</MedicalConditionRef>
             <MedicalConditionRef>TRM_SFI</MedicalConditionRef>
             <MedicalConditionRef>TRM_ANF</MedicalConditionRef>
@@ -396,25 +341,14 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 
     <GameDBEventVariation ID="MOD_JM_EVENT_EXPLODED_SHIP">
         <DescriptionLocID>MOD_JM_EVENT_EXPLODED_SHIP_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>15</PatientCount>
-        <DurationHours>20</DurationHours>
+        <PatientCount>5</PatientCount>
+        <DurationHours>7</DurationHours>
 		<PatientPercentage>10</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
@@ -422,46 +356,33 @@
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-         	<MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
-			<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+		<!-- Emergency -->
+		    <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			
+		<!-- Traumatology -->
+			<MedicalConditionRef>TRM_017</MedicalConditionRef>
+         	<MedicalConditionRef>TRM_018</MedicalConditionRef>
+         	<MedicalConditionRef>TRM_026</MedicalConditionRef> 
+	        <MedicalConditionRef>TRM_032</MedicalConditionRef>	
+   	        <MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>	
+	        <MedicalConditionRef>TRM_023</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_024</MedicalConditionRef>
+			<MedicalConditionRef>TRM_003</MedicalConditionRef> 
+            <MedicalConditionRef>TRM_004</MedicalConditionRef>
+			
+		<!-- Orthopaedy -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -493,25 +414,26 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+		<!-- GS -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
     
 	<GameDBEventVariation ID="MOD_JM_EVENT_BUILDCOLLAPSE1">
         <DescriptionLocID>MOD_JM_EVENT_BUILDCOLLAPSE1_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>15</PatientCount>
-        <DurationHours>20</DurationHours>
+        <PatientCount>5</PatientCount>
+        <DurationHours>7</DurationHours>
 		<PatientPercentage>10</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
@@ -519,46 +441,19 @@
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
-			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-         	<MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
-			<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+			<!-- EMERGENCY -->
+			<MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+		
+            <!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -590,70 +485,44 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_BUS_ACCIDENT">
         <DescriptionLocID>MOD_JM_EVENT_BUS_ACCIDENT_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>8</PatientCount>
-        <DurationHours>10</DurationHours>
+        <PatientCount>5</PatientCount>
+        <DurationHours>7</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
-			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-         	<MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
-			<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+			<!-- EMERGENCY -->
+			<MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -685,25 +554,22 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- NEURO -->
+			<MedicalConditionRef>TRM_CCS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CTS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_DAI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TBI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_AIH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_OBI</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_CHAIN_COLLISION">
         <DescriptionLocID>MOD_JM_EVENT_CHAIN_COLLISION_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>8</PatientCount>
-        <DurationHours>10</DurationHours>
+        <PatientCount>6</PatientCount>
+        <DurationHours>8</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
@@ -715,40 +581,50 @@
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
+            <!-- TRAUMATOLOGY -->
+            <MedicalConditionRef>TRM_003</MedicalConditionRef>
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+          	<MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-         	<MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
 			<MedicalConditionRef>TRM_017</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
 			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
 	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PLPX</MedicalConditionRef>
+			
+			<!-- EMERGENCY -->
+			<MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			
+			<!-- CARDIO -->
+			<MedicalConditionRef>TRM_BCI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TCA</MedicalConditionRef>
+			<MedicalConditionRef>TRM_FLC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TAR</MedicalConditionRef>
+			
+			<!-- IM -->
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			
+			<!-- NEURO -->
+			<MedicalConditionRef>TRM_CCS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CTS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_DAI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TBI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_AIH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -780,25 +656,26 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_TRAIN_DERAILMENT">
         <DescriptionLocID>MOD_JM_EVENT_TRAIN_DERAILMENT_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>12</PatientCount>
-        <DurationHours>12</DurationHours>
+        <PatientCount>6</PatientCount>
+        <DurationHours>8</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
@@ -810,40 +687,50 @@
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
+		    <!-- TRAUMATOLOGY -->
+            <MedicalConditionRef>TRM_003</MedicalConditionRef>
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+          	<MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-         	<MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
 			<MedicalConditionRef>TRM_017</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
 			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
 	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PLPX</MedicalConditionRef>
+			
+			<!-- EMERGENCY -->
+			<MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			
+			<!-- CARDIO -->
+			<MedicalConditionRef>TRM_BCI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TCA</MedicalConditionRef>
+			<MedicalConditionRef>TRM_FLC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TAR</MedicalConditionRef>
+			
+			<!-- IM -->
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			
+			<!-- NEURO -->
+			<MedicalConditionRef>TRM_CCS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CTS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_DAI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TBI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_AIH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -875,25 +762,26 @@
             <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_CHEMICAL_LEAK">
         <DescriptionLocID>MOD_JM_EVENT_CHEMICAL_LEAK_DESC</DescriptionLocID>
         <EventRef>EVENT_CRASH</EventRef>
-        <PatientCount>8</PatientCount>
-        <DurationHours>10</DurationHours>
+        <PatientCount>6</PatientCount>
+        <DurationHours>8</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
@@ -902,71 +790,34 @@
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
+		    <!-- Emergency -->
 		    <MedicalConditionRef>DIA_ADS</MedicalConditionRef>
+			
+			<!-- IM -->
 			<MedicalConditionRef>DIA_ACD</MedicalConditionRef>
+			<MedicalConditionRef>DIA_ASM</MedicalConditionRef>
             <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
             <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
             <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
             <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
+			
+			<!-- TRAUMATOLOGY -->
 			<MedicalConditionRef>TRM_023</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_024</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
         </MedicalConditions>
     </GameDBEventVariation>
 	
     <!-- epidemic variations -->
-
-    <GameDBEventVariation ID="EVENT_FLU_OUTBREAK">
-        <DescriptionLocID>EVENT_FLU_OUTBREAK</DescriptionLocID>
-        <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>25</PatientCount>
-        <DurationHours>24</DurationHours>
-
-        <RequiredDepartmentTypeList>
-            <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
-        </RequiredDepartmentTypeList>
-
-        <MedicalConditions>
-            <MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-        </MedicalConditions>
-    </GameDBEventVariation>
-	
 	<GameDBEventVariation ID="EVENT_FOOD_POISONING">
         <DescriptionLocID>EVENT_FOOD_POISONING</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>30</PatientCount>
-        <DurationHours>34</DurationHours>
+        <PatientCount>15</PatientCount>
+        <DurationHours>17</DurationHours>
 
         <RequiredDepartmentTypeList>
-            <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef><!--13-->
-            <RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef><!--6-->
+		    <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
+            <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
+            <RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
@@ -997,8 +848,8 @@
     <GameDBEventVariation ID="MOD_JM_EVENT_FOOD_POISONING1">
         <DescriptionLocID>MOD_JM_EVENT_FOOD_POISONING1_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>30</PatientCount>
-        <DurationHours>34</DurationHours>
+        <PatientCount>15</PatientCount>
+        <DurationHours>17</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef><!--13-->
@@ -1012,8 +863,8 @@
 	<GameDBEventVariation ID="MOD_JM_EVENT_FOOD_POISONING2">
         <DescriptionLocID>MOD_JM_EVENT_FOOD_POISONING2_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>30</PatientCount>
-        <DurationHours>38</DurationHours>
+        <PatientCount>8</PatientCount>
+        <DurationHours>10</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef><!--13-->
@@ -1027,8 +878,8 @@
 	<GameDBEventVariation ID="MOD_JM_EVENT_FOOD_POISONING3">
         <DescriptionLocID>MOD_JM_EVENT_FOOD_POISONING3_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>40</PatientCount>
-        <DurationHours>40</DurationHours>
+        <PatientCount>12</PatientCount>
+        <DurationHours>14</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
@@ -1063,8 +914,8 @@
     <GameDBEventVariation ID="MOD_JM_EVENT_FOOD_POISONING4">
         <DescriptionLocID>MOD_JM_EVENT_FOOD_POISONING4_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>40</PatientCount>
-        <DurationHours>40</DurationHours>
+        <PatientCount>20</PatientCount>
+        <DurationHours>22</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
@@ -1100,8 +951,8 @@
     <GameDBEventVariation ID="MOD_JM_EVENT_EPIDEMIC1">
         <DescriptionLocID>MOD_JM_EVENT_EPIDEMIC1_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>40</PatientCount>
-        <DurationHours>40</DurationHours>
+        <PatientCount>20</PatientCount>
+        <DurationHours>22</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
@@ -1145,12 +996,15 @@
         <DescriptionLocID>MOD_JM_EVENT_EPIDEMIC2_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
         <PatientCount>15</PatientCount>
-        <DurationHours>20</DurationHours>
+        <DurationHours>17</DurationHours>
 
         <RequiredDepartmentTypeList>
 			<RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
-
+        
+		<LaunchWorldEvent>true</LaunchWorldEvent>
+        <WorldEventType>DLC_WORLD_EVENT_DISEASE_OUTBREAK</WorldEventType>
+		
         <MedicalConditions>
 		    <MedicalConditionRef>DIA_038</MedicalConditionRef> 
 	        <MedicalConditionRef>DIA_039</MedicalConditionRef> 
@@ -1161,13 +1015,16 @@
 	<GameDBEventVariation ID="MOD_JM_EVENT_EPIDEMIC3">
         <DescriptionLocID>MOD_JM_EVENT_EPIDEMIC3_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>4</PatientCount>
+        <PatientCount>8</PatientCount>
         <DurationHours>10</DurationHours>
 
         <RequiredDepartmentTypeList>
 			<RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
-
+        
+		<LaunchWorldEvent>true</LaunchWorldEvent>
+        <WorldEventType>DLC_WORLD_EVENT_DISEASE_OUTBREAK</WorldEventType>
+		
         <MedicalConditions>
 		    <MedicalConditionRef>DIA_041</MedicalConditionRef>
 		</MedicalConditions>
@@ -1177,7 +1034,7 @@
         <DescriptionLocID>MOD_JM_EVENT_SEASON1_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
         <PatientCount>10</PatientCount>
-        <DurationHours>10</DurationHours>
+        <DurationHours>12</DurationHours>
 
         <RequiredDepartmentTypeList>
 			<RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
@@ -1199,8 +1056,8 @@
 	<GameDBEventVariation ID="MOD_JM_EVENT_SEASON2">
         <DescriptionLocID>MOD_JM_EVENT_SEASON2_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>10</PatientCount>
-        <DurationHours>10</DurationHours>
+        <PatientCount>15</PatientCount>
+        <DurationHours>17</DurationHours>
 
         <RequiredDepartmentTypeList>
 			<RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
@@ -1230,7 +1087,7 @@
 	<GameDBEventVariation ID="MOD_JM_EVENT_BIOTERRORIST1">
         <DescriptionLocID>MOD_JM_EVENT_BIOTERRORIST1_DESC</DescriptionLocID>
         <EventRef>EVENT_PANDEMIC</EventRef>
-        <PatientCount>20</PatientCount>
+        <PatientCount>18</PatientCount>
         <DurationHours>20</DurationHours>
 
         <RequiredDepartmentTypeList>
@@ -1242,7 +1099,11 @@
 			<MedicalConditionRef>DIA_TBCX</MedicalConditionRef>
 			<MedicalConditionRef>DIA_040</MedicalConditionRef>
 			<MedicalConditionRef>DIA_028</MedicalConditionRef>
-	        <MedicalConditionRef>DIA_029</MedicalConditionRef>
+			<MedicalConditionRef>DIA_018</MedicalConditionRef>
+			<MedicalConditionRef>DIA_039</MedicalConditionRef>
+			<MedicalConditionRef>DIA_040</MedicalConditionRef>
+			<MedicalConditionRef>DIA_038</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_028</MedicalConditionRef>
 	        <MedicalConditionRef>DIA_PTSX</MedicalConditionRef>
 			<MedicalConditionRef>DIA_045</MedicalConditionRef>
 			<MedicalConditionRef>DIA_LEGX</MedicalConditionRef>
@@ -1253,105 +1114,47 @@
     <GameDBEventVariation ID="MOD_JM_EVENT_EXPLOSION">
         <DescriptionLocID>MOD_JM_EVENT_EXPLOSION_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>5</PatientCount>
-        <DurationHours>12</DurationHours>
+        <PatientCount>8</PatientCount>
+		<PatientCountDisaster>4</PatientCountDisaster>
+        <DurationHours>10</DurationHours>
 		<PatientPercentage>20</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SHS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SHD</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KSP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KDL</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ASP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DLA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ACL</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BRR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OFT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SPT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_ANF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MBF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FOF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
         </MedicalConditions>
+
+        <MedicalConditionsDisaster>
+            <MedicalConditionRef>TRM_017</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
+			<MedicalConditionRef>TRM_003</MedicalConditionRef>
+            <MedicalConditionRef>TRM_004</MedicalConditionRef>
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
+        	<MedicalConditionRef>TRM_015</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>	
+        </MedicalConditionsDisaster>
     </GameDBEventVariation>
-        
+   
     <GameDBEventVariation ID="MOD_JM_EVENT_NUCLEAR_MELTDOWN">
         <DescriptionLocID>MOD_JM_EVENT_NUCLEAR_MELTDOWN_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>50</PatientCount>
-        <DurationHours>60</DurationHours>
+        <PatientCount>30</PatientCount>
+		<PatientCountDisaster>15</PatientCountDisaster>
+        <DurationHours>22</DurationHours>
 		<PatientPercentage>10</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
@@ -1359,47 +1162,90 @@
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
+            <RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFR</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
+			<MedicalConditionRef>DIA_025</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_026</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_030</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_031</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_033</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_034</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_035</MedicalConditionRef> 	
+	        <MedicalConditionRef>DIA_043</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_LEGX</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_TYFX</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_CLCX</MedicalConditionRef> 
+        </MedicalConditions>
+
+        <MedicalConditionsDisaster>
+            <!-- TRAUMATOLOGY -->
+            <MedicalConditionRef>TRM_017</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_018</MedicalConditionRef>	
+	        <MedicalConditionRef>TRM_026</MedicalConditionRef> 
+	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_023</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_024</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_003</MedicalConditionRef> 
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
+			<MedicalConditionRef>TRM_013</MedicalConditionRef>
+			
+			<!-- IM -->
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			
+			<!-- NEURO -->
+			<MedicalConditionRef>TRM_CCS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CTS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_DAI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TBI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_AIH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -1410,114 +1256,42 @@
             <MedicalConditionRef>TRM_ASP</MedicalConditionRef>
             <MedicalConditionRef>TRM_DLA</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACL</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFU</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_BRR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFF</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_SPT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFI</MedicalConditionRef>
             <MedicalConditionRef>TRM_ANF</MedicalConditionRef>
             <MedicalConditionRef>TRM_MBF</MedicalConditionRef>
             <MedicalConditionRef>TRM_FOF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
-			<MedicalConditionRef>DIA_ADS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
-			<MedicalConditionRef>DIA_PTI</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BTI</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HBP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GAU</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GAS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_DUO</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ULC</MedicalConditionRef>
-            <MedicalConditionRef>DIA_IBS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_FDR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PER</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HEF</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CLS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CLA</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APT</MedicalConditionRef>
-            <MedicalConditionRef>DIA_COE</MedicalConditionRef>
-            <MedicalConditionRef>DIA_055</MedicalConditionRef>
-            <MedicalConditionRef>DIA_048</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SLM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_AMB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GRD</MedicalConditionRef>
-			<MedicalConditionRef>DIA_CLD</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APH</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANG</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANV</MedicalConditionRef>
-            <MedicalConditionRef>DIA_LAR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_046</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BRN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HPM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BPN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BES</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SCB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CPD</MedicalConditionRef>
-			<MedicalConditionRef>DIA_ADS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-            <MedicalConditionRef>DIA_048</MedicalConditionRef>
-            <MedicalConditionRef>DIA_064</MedicalConditionRef>
-            <MedicalConditionRef>DIA_FDR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_062</MedicalConditionRef>
-            <MedicalConditionRef>DIA_054</MedicalConditionRef>
-			<MedicalConditionRef>DIA_CLD</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APH</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANG</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANV</MedicalConditionRef>
-            <MedicalConditionRef>DIA_LAR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BRN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HPM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BPN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BES</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SCB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CPD</MedicalConditionRef>
-        </MedicalConditions>
+			<MedicalConditionRef>TRM_CFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
+        </MedicalConditionsDisaster>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_VOLCANIC_ERUPTION">
         <DescriptionLocID>MOD_JM_EVENT_VOLCANIC_ERUPTION_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>30</PatientCount>
-        <DurationHours>40</DurationHours>
+        <PatientCount>18</PatientCount>
+		<PatientCountDisaster>9</PatientCountDisaster>
+        <DurationHours>15</DurationHours>
 		<PatientPercentage>10</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
@@ -1525,47 +1299,81 @@
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFR</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
+			<MedicalConditionRef>DIA_025</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_026</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_030</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_031</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_033</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_034</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_035</MedicalConditionRef> 	
+	        <MedicalConditionRef>DIA_043</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_LEGX</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_TYFX</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_CLCX</MedicalConditionRef> 
+        </MedicalConditions>
+
+        <MedicalConditionsDisaster>
+            <!-- TRAUMATOLOGY -->
+            <MedicalConditionRef>TRM_017</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_018</MedicalConditionRef>	
+	        <MedicalConditionRef>TRM_026</MedicalConditionRef> 
+	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_023</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_024</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_003</MedicalConditionRef> 
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
+			<MedicalConditionRef>TRM_013</MedicalConditionRef>
+			
+			<!-- IM -->
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -1576,114 +1384,42 @@
             <MedicalConditionRef>TRM_ASP</MedicalConditionRef>
             <MedicalConditionRef>TRM_DLA</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACL</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFU</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_BRR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFF</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_SPT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFI</MedicalConditionRef>
             <MedicalConditionRef>TRM_ANF</MedicalConditionRef>
             <MedicalConditionRef>TRM_MBF</MedicalConditionRef>
             <MedicalConditionRef>TRM_FOF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
-			<MedicalConditionRef>DIA_ADS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
-			<MedicalConditionRef>DIA_PTI</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BTI</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HBP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GAU</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GAS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_DUO</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ULC</MedicalConditionRef>
-            <MedicalConditionRef>DIA_IBS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_FDR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PER</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HEF</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CLS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CLA</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APT</MedicalConditionRef>
-            <MedicalConditionRef>DIA_COE</MedicalConditionRef>
-            <MedicalConditionRef>DIA_055</MedicalConditionRef>
-            <MedicalConditionRef>DIA_048</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SLM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_AMB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GRD</MedicalConditionRef>
-			<MedicalConditionRef>DIA_CLD</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APH</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANG</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANV</MedicalConditionRef>
-            <MedicalConditionRef>DIA_LAR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_046</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BRN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HPM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BPN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BES</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SCB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CPD</MedicalConditionRef>
-			<MedicalConditionRef>DIA_ADS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-            <MedicalConditionRef>DIA_048</MedicalConditionRef>
-            <MedicalConditionRef>DIA_064</MedicalConditionRef>
-            <MedicalConditionRef>DIA_FDR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_062</MedicalConditionRef>
-            <MedicalConditionRef>DIA_054</MedicalConditionRef>
-			<MedicalConditionRef>DIA_CLD</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APH</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANG</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANV</MedicalConditionRef>
-            <MedicalConditionRef>DIA_LAR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BRN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HPM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BPN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BES</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SCB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CPD</MedicalConditionRef>
-        </MedicalConditions>
+			<MedicalConditionRef>TRM_CFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
+        </MedicalConditionsDisaster>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_LANDSLIDE">
-        <DescriptionLocID>MOD_JM_EVENT_SLIDE_DESC</DescriptionLocID>
+        <DescriptionLocID>MOD_JM_EVENT_LANDSLIDE_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>30</PatientCount>
-        <DurationHours>40</DurationHours>
+        <PatientCount>18</PatientCount>
+		<PatientCountDisaster>9</PatientCountDisaster>
+        <DurationHours>15</DurationHours>
 		<PatientPercentage>10</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
@@ -1693,45 +1429,84 @@
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
-			<RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFR</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
+			<MedicalConditionRef>DIA_025</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_026</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_030</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_031</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_033</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_034</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_035</MedicalConditionRef> 	
+	        <MedicalConditionRef>DIA_043</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_LEGX</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_TYFX</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_CLCX</MedicalConditionRef> 
+        </MedicalConditions>
+
+        <MedicalConditionsDisaster>
+            <!-- TRAUMATOLOGY -->
+            <MedicalConditionRef>TRM_017</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_018</MedicalConditionRef>	
+	        <MedicalConditionRef>TRM_026</MedicalConditionRef> 
+	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_023</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_024</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_003</MedicalConditionRef> 
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
+			<MedicalConditionRef>TRM_013</MedicalConditionRef>
+			
+			<!-- CARDIO -->
+			<MedicalConditionRef>TRM_BCI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TCA</MedicalConditionRef>
+			<MedicalConditionRef>TRM_FLC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TAR</MedicalConditionRef>
+			
+			<!-- NEURO -->
+			<MedicalConditionRef>TRM_CCS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CTS</MedicalConditionRef>
+			<MedicalConditionRef>TRM_DAI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_TBI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_AIH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_OBI</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -1742,160 +1517,121 @@
             <MedicalConditionRef>TRM_ASP</MedicalConditionRef>
             <MedicalConditionRef>TRM_DLA</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACL</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFU</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_BRR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFF</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_SPT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFI</MedicalConditionRef>
             <MedicalConditionRef>TRM_ANF</MedicalConditionRef>
             <MedicalConditionRef>TRM_MBF</MedicalConditionRef>
             <MedicalConditionRef>TRM_FOF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
-			<MedicalConditionRef>DIA_ADS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
-			<MedicalConditionRef>DIA_PTI</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BTI</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HBP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GAU</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GAS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_DUO</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ULC</MedicalConditionRef>
-            <MedicalConditionRef>DIA_IBS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_FDR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PER</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HEF</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CLS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CLA</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APT</MedicalConditionRef>
-            <MedicalConditionRef>DIA_COE</MedicalConditionRef>
-            <MedicalConditionRef>DIA_055</MedicalConditionRef>
-            <MedicalConditionRef>DIA_048</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SLM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_AMB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GRD</MedicalConditionRef>
-			<MedicalConditionRef>DIA_CLD</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APH</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANG</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANV</MedicalConditionRef>
-            <MedicalConditionRef>DIA_LAR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_046</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BRN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HPM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BPN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BES</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SCB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CPD</MedicalConditionRef>
-			<MedicalConditionRef>DIA_ADS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-            <MedicalConditionRef>DIA_048</MedicalConditionRef>
-            <MedicalConditionRef>DIA_064</MedicalConditionRef>
-            <MedicalConditionRef>DIA_FDR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_062</MedicalConditionRef>
-            <MedicalConditionRef>DIA_054</MedicalConditionRef>
-			<MedicalConditionRef>DIA_CLD</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APH</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANG</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANV</MedicalConditionRef>
-            <MedicalConditionRef>DIA_LAR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BRN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HPM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BPN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BES</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SCB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CPD</MedicalConditionRef>
-        </MedicalConditions>
+			<MedicalConditionRef>TRM_CFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
+        </MedicalConditionsDisaster>
     </GameDBEventVariation>
 	
-	<GameDBEventVariation ID="MOD_JM_EVENT_DAM_BURST">
+	<GameDBEventVariation ID="MOD_JM_EVENT_DAM_BURST"> 
         <DescriptionLocID>MOD_JM_EVENT_DAM_BURST_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>40</PatientCount>
-        <DurationHours>50</DurationHours>
+        <PatientCount>24</PatientCount>
+		<PatientCountDisaster>12</PatientCountDisaster>
+        <DurationHours>20</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
             <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_CARDIOLOGY</RequiredDepartmentTypeRef>
-            <RequiredDepartmentTypeRef>DPT_NEUROLOGY</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-		    <MedicalConditionRef>TRM_003</MedicalConditionRef>
-            <MedicalConditionRef>TRM_004</MedicalConditionRef>
-			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-		    <MedicalConditionRef>TRM_011</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
-			<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
-			<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
-			<MedicalConditionRef>TRM_029</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
             <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
             <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
             <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFR</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
+			<MedicalConditionRef>DIA_025</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_026</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_030</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_031</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_033</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_034</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_035</MedicalConditionRef> 	
+	        <MedicalConditionRef>DIA_043</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_LEGX</MedicalConditionRef> 
+	        <MedicalConditionRef>DIA_TYFX</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_CLCX</MedicalConditionRef> 
+        </MedicalConditions>
+
+        <MedicalConditionsDisaster>
+            <!-- TRAUMATOLOGY -->
+            <MedicalConditionRef>TRM_017</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_018</MedicalConditionRef>	
+	        <MedicalConditionRef>TRM_026</MedicalConditionRef> 
+	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+			<MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_023</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_024</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
+			<MedicalConditionRef>TRM_003</MedicalConditionRef> 
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_011</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
+			<MedicalConditionRef>TRM_013</MedicalConditionRef>
+			
+			<!-- IM -->
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			<MedicalConditionRef>TRM_PCT</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+			
+			<!-- ORTHO -->
+			<MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
@@ -1906,160 +1642,42 @@
             <MedicalConditionRef>TRM_ASP</MedicalConditionRef>
             <MedicalConditionRef>TRM_DLA</MedicalConditionRef>
             <MedicalConditionRef>TRM_ACL</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFU</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFU</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
             <MedicalConditionRef>TRM_BRR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFF</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CFF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_OFT</MedicalConditionRef>
             <MedicalConditionRef>TRM_SPT</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFI</MedicalConditionRef>
             <MedicalConditionRef>TRM_ANF</MedicalConditionRef>
             <MedicalConditionRef>TRM_MBF</MedicalConditionRef>
             <MedicalConditionRef>TRM_FOF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_SFC</MedicalConditionRef>
             <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
             <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
-            <MedicalConditionRef>TRM_BCI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_FLC</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TCA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TAR</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CCS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CTS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DAI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_TBI</MedicalConditionRef>
-            <MedicalConditionRef>TRM_AIH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_OBI</MedicalConditionRef>
-			<MedicalConditionRef>DIA_ADS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
-			<MedicalConditionRef>DIA_PTI</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BTI</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HBP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GAU</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GAS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_DUO</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ULC</MedicalConditionRef>
-            <MedicalConditionRef>DIA_IBS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_FDR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PER</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HEF</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CLS</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CLA</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APT</MedicalConditionRef>
-            <MedicalConditionRef>DIA_COE</MedicalConditionRef>
-            <MedicalConditionRef>DIA_055</MedicalConditionRef>
-            <MedicalConditionRef>DIA_048</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SLM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_AMB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_GRD</MedicalConditionRef>
-			<MedicalConditionRef>DIA_CLD</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APH</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANG</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANV</MedicalConditionRef>
-            <MedicalConditionRef>DIA_LAR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_046</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BRN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HPM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BPN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BES</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SCB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CPD</MedicalConditionRef>
-			<MedicalConditionRef>DIA_ADS</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_CGP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_MTP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_LDP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CAB</MedicalConditionRef>
-			<MedicalConditionRef>DIA_046</MedicalConditionRef>
-            <MedicalConditionRef>DIA_048</MedicalConditionRef>
-            <MedicalConditionRef>DIA_064</MedicalConditionRef>
-            <MedicalConditionRef>DIA_FDR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_062</MedicalConditionRef>
-            <MedicalConditionRef>DIA_054</MedicalConditionRef>
-			<MedicalConditionRef>DIA_CLD</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_APH</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANG</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ANV</MedicalConditionRef>
-            <MedicalConditionRef>DIA_LAR</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BRN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_HPM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_ASP</MedicalConditionRef>
-            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BPN</MedicalConditionRef>
-            <MedicalConditionRef>DIA_BES</MedicalConditionRef>
-            <MedicalConditionRef>DIA_SCB</MedicalConditionRef>
-            <MedicalConditionRef>DIA_CPD</MedicalConditionRef>
-        </MedicalConditions>
+			<MedicalConditionRef>TRM_CFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+			
+			<!-- SURG -->
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
+        </MedicalConditionsDisaster>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_FIRE1">
         <DescriptionLocID>MOD_JM_EVENT_FIRE1_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>6</PatientCount>
-        <DurationHours>10</DurationHours>
-		<PatientPercentage>5</PatientPercentage>
-        <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
-
-        <RequiredDepartmentTypeList>
-            <RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
-			<RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
-			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
-        </RequiredDepartmentTypeList>
-
-        <MedicalConditions>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-
-            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
-            <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
-        </MedicalConditions>
-    </GameDBEventVariation>
-	
-	<GameDBEventVariation ID="MOD_JM_EVENT_FIRE2">
-        <DescriptionLocID>MOD_JM_EVENT_FIRE2_DESC</DescriptionLocID>
-        <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>20</PatientCount>
-        <DurationHours>22</DurationHours>
+        <PatientCount>10</PatientCount>
+		<PatientCountDisaster>5</PatientCountDisaster>
+        <DurationHours>12</DurationHours>
 		<PatientPercentage>20</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
@@ -2070,40 +1688,87 @@
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
             <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_030</MedicalConditionRef>
             <MedicalConditionRef>TRM_029</MedicalConditionRef>
             <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_030</MedicalConditionRef>
             <MedicalConditionRef>TRM_029</MedicalConditionRef>
-
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-			
             <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
+        </MedicalConditions>
+		
+		<MedicalConditionsDisaster>
+		    <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+		</MedicalConditionsDisaster>
+    </GameDBEventVariation>
+	
+	<GameDBEventVariation ID="MOD_JM_EVENT_FIRE2">
+        <DescriptionLocID>MOD_JM_EVENT_FIRE2_DESC</DescriptionLocID>
+        <EventRef>EVENT_NATURAL_DISASTER</EventRef>
+        <PatientCount>12</PatientCount>
+		<PatientCountDisaster>6</PatientCountDisaster>
+        <DurationHours>14</DurationHours>
+		<PatientPercentage>20</PatientPercentage>
+        <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
+
+        <RequiredDepartmentTypeList>
+            <RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
+        </RequiredDepartmentTypeList>
+
+       <MedicalConditions>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+            <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+            <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
+            <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
+            <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
+        </MedicalConditions>
+		
+		<MedicalConditionsDisaster>
+		    <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
 			<MedicalConditionRef>TRM_017</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
 			<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
+            <MedicalConditionRef>TRM_008</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
 	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
-        </MedicalConditions>
+		</MedicalConditionsDisaster>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_FIRE3">
         <DescriptionLocID>MOD_JM_EVENT_FIRE3_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>25</PatientCount>
-        <DurationHours>25</DurationHours>
+        <PatientCount>18</PatientCount>
+		<PatientCountDisaster>9</PatientCountDisaster>
+        <DurationHours>20</DurationHours>
 		<PatientPercentage>10</PatientPercentage>
         <PatientOccupation>OCCUPATION_FIREFIGHTER</PatientOccupation>
 
@@ -2114,43 +1779,35 @@
         </RequiredDepartmentTypeList>
 
         <MedicalConditions>
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
             <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_030</MedicalConditionRef>
             <MedicalConditionRef>TRM_029</MedicalConditionRef>
             <MedicalConditionRef>TRM_031</MedicalConditionRef>
             <MedicalConditionRef>TRM_030</MedicalConditionRef>
             <MedicalConditionRef>TRM_029</MedicalConditionRef>
-
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-
-            <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-            <MedicalConditionRef>TRM_031</MedicalConditionRef>
-            <MedicalConditionRef>TRM_030</MedicalConditionRef>
-            <MedicalConditionRef>TRM_029</MedicalConditionRef>
-
             <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
             <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
         </MedicalConditions>
+		
+		<MedicalConditionsDisaster>
+		    <MedicalConditionRef>TRM_CMP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+            <MedicalConditionRef>TRM_031</MedicalConditionRef>
+            <MedicalConditionRef>TRM_030</MedicalConditionRef>
+            <MedicalConditionRef>TRM_029</MedicalConditionRef>
+		</MedicalConditionsDisaster>
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_HURRICANE1">
-        <DescriptionLocID>MOD_JM_EVENT_HURRICANE1</DescriptionLocID>
+        <DescriptionLocID>MOD_JM_EVENT_HURRICANE1_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>15</PatientCount>
-        <PatientCountDisaster>10</PatientCountDisaster>
-        <DurationHours>17</DurationHours>
+        <PatientCount>16</PatientCount>
+        <PatientCountDisaster>8</PatientCountDisaster>
+        <DurationHours>18</DurationHours>
 
         <RequiredDepartmentTypeList>
             <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef><!--6-->
@@ -2238,10 +1895,10 @@
     </GameDBEventVariation>
 	
 	<GameDBEventVariation ID="MOD_JM_EVENT_TORNADO1">
-        <DescriptionLocID>MOD_JM_EVENT_TORNADO1</DescriptionLocID>
+        <DescriptionLocID>MOD_JM_EVENT_TORNADO1_DESC</DescriptionLocID>
         <EventRef>EVENT_NATURAL_DISASTER</EventRef>
-        <PatientCount>15</PatientCount>
-        <PatientCountDisaster>10</PatientCountDisaster>
+        <PatientCount>16</PatientCount>
+        <PatientCountDisaster>8</PatientCountDisaster>
         <DurationHours>17</DurationHours>
 
         <RequiredDepartmentTypeList>
@@ -2489,6 +2146,64 @@
 	<MedicalConditionRef>TRM_034</MedicalConditionRef> VENOMOUS SPIDER
 	<MedicalConditionRef>TRM_035</MedicalConditionRef> RATTLESNAKE
 	<MedicalConditionRef>TRM_036</MedicalConditionRef> COPPERHEAD
+	
+	#########################EMERGENCY DIAG:#########################
+	
+	CONTUSION: 
+	
+	        <MedicalConditionRef>TRM_ACT</MedicalConditionRef>
+            <MedicalConditionRef>TRM_HCT</MedicalConditionRef>
+            <MedicalConditionRef>TRM_FCT</MedicalConditionRef>
+            <MedicalConditionRef>TRM_ACN</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LCT</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CCT</MedicalConditionRef>
+			
+	#########################ORTHO DIAG:#########################
+			
+	
+	        <MedicalConditionRef>TRM_DWH</MedicalConditionRef>
+            <MedicalConditionRef>TRM_DWA</MedicalConditionRef>
+            <MedicalConditionRef>TRM_DWL</MedicalConditionRef>
+            <MedicalConditionRef>TRM_DWF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SHS</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SHD</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KSP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KDL</MedicalConditionRef>
+            <MedicalConditionRef>TRM_ASP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_DLA</MedicalConditionRef>
+            <MedicalConditionRef>TRM_ACL</MedicalConditionRef>
+            <MedicalConditionRef>TRM_OFU</MedicalConditionRef>
+            <MedicalConditionRef>TRM_OFH</MedicalConditionRef>
+            <MedicalConditionRef>TRM_BRR</MedicalConditionRef>
+            <MedicalConditionRef>TRM_OFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_OFT</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SPT</MedicalConditionRef>
+            <MedicalConditionRef>TRM_ANF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_MBF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_FOF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
+            <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_NSF</MedicalConditionRef>
+			
+	COMPLICATED FRACTURES:
+	
+	        <MedicalConditionRef>TRM_CFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+	
+	SIMPLE FRACTURES:
+			
+			<MedicalConditionRef>TRM_SFR</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
+			
+			
+			
 
 	-->
     

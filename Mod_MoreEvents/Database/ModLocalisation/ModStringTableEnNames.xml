@@ -8,9 +8,14 @@
             <Name>James B</Name>
         </Contributors>
         
-        <LocalizedStrings>           
+        <LocalizedStrings>       
+		
             <!-- Insurance companies -->
-            <GameDBLocalizedString>    <LocID>IN_COM_MODEVE_RECS</LocID>             <Text>Red Cross Disaster Relief</Text>  </GameDBLocalizedString>
+            <GameDBLocalizedString>    
+			<LocID>IN_COM_MODEVE_RECS</LocID>             
+			<Text>Red Cross Disaster Relief</Text>  
+			</GameDBLocalizedString>
+			
         </LocalizedStrings>
     </GameDBStringTable>
 

@@ -101,35 +101,6 @@
         <IconIndex>452</IconIndex>
     </GameDBWorldEvent>
 
-    <!-- GameDBWorldEvent ID="DLC_WORLD_EVENT_OTHER_HOSPITAL_CLOSED">
-        <DescriptionID>DLC_WORLD_EVENT_OTHER_HOSPITAL_CLOSED_TEXT</DescriptionID>
-        <Type>MODIFIED_PATIENT_NUMBERS_PERCENT</Type>
-        <ModifierMin>10</ModifierMin>
-        <ModifierMax>30</ModifierMax>
-        <DurationDaysMin>2</DurationDaysMin>
-        <DurationDaysMin>5</DurationDaysMin>
-        <IconIndex>452</IconIndex>
-    </GameDBWorldEvent>
 
-    <GameDBWorldEvent ID="DLC_WORLD_EVENT_PUBLIC_HEALTH_REFORM">
-        <DescriptionID>DLC_WORLD_EVENT_PUBLIC_HEALTH_REFORM_TEXT</DescriptionID>
-        <Type>MODIFIED_INSURANCE_PAYMENTS_PERCENT</Type>
-        <ModifierMin>10</ModifierMin>
-        <ModifierMax>30</ModifierMax>
-        <DurationDaysMin>2</DurationDaysMin>
-        <DurationDaysMin>5</DurationDaysMin>
-        <IconIndex>452</IconIndex>
-    </GameDBWorldEvent>
-
-    <GameDBWorldEvent ID="DLC_WORLD_EVENT_BANK_HOLIDAYS">
-        <DescriptionID>DLC_WORLD_EVENT_BANK_HOLIDAYS_TEXT</DescriptionID>
-        <Type>MODIFIED_DIAGNOSIS_TYPES</Type>
-        <Tag>trauma</Tag>
-        <ModifierMin>20</ModifierMin>
-        <ModifierMax>50</ModifierMax>
-        <DurationDaysMin>1</DurationDaysMin>
-        <DurationDaysMin>1</DurationDaysMin>
-        <IconIndex>452</IconIndex>
-    </GameDBWorldEvent -->
 
 </Database>
