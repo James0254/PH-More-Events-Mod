@@ -1,0 +1,48 @@
+============================== Ear, Nose and Throat ==============================
+By James
+
+Big, big thanks to Sleepy068 - Creator of Oncology for helping me get into modding and help me so much along the way! Otherwise this mod wouldn't have been on the workshop 
+
+=======================Discord & Github=======================
+
+Discord Link: https://discord.gg/x6GVjTY3Jq
+
+Github: https://github.com/James0254/EarNoseandThroatMod/releases
+
+=======================Installation=======================
+
+
+To have this mod in your Project Hospital Game, put the Mod_MoreEvents in 
+
+Project Hospital\ProjectHospital_Data\StreamingAssets\Addons\
+
+and you should see the mod name appear in the bottom left corner of the main menu like this
+
+
+More Events (By James B)
+
+============================== Changelog ==============================
+
+=====0.2.0.0v======
+- Added 6 new events; 2 of which are based of real life events
+- Grammar Errors fixed
+
+=====0.1.5.0v======
+- Increased time for Events
+- Readjusted patient influx
+- Reworked descriptions
+- Readjusted diagnoses for events
+
+=====0.1.2.5v=====
+- Readjusted patient influx
+- Grammar error fixed
+- Timer readjustment
+
+=====0.1.0.0v=====
+- added 15 new events & 5 world events
+- tried 'fixing' time bug
+
+=====0.0.5.0v=====
+Release
+- 15 events added
+- 1 insurance company

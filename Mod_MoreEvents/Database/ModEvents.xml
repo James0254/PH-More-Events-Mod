@@ -807,6 +807,103 @@
         </MedicalConditions>
     </GameDBEventVariation>
 	
+	<GameDBEventVariation ID="MOD_JM_EVENT_SHOOTING">
+        <DescriptionLocID>MOD_JM_EVENT_SHOOTING_DESC</DescriptionLocID>
+        <EventRef>EVENT_CRASH</EventRef>
+        <PatientCount>8</PatientCount>
+        <DurationHours>10</DurationHours>
+
+        <RequiredDepartmentTypeList>
+            <RequiredDepartmentTypeRef>DPT_GENERAL_SURGERY_DEPARTMENT</RequiredDepartmentTypeRef>
+            <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
+        </RequiredDepartmentTypeList>
+
+        <MedicalConditions>
+		    <!-- Trauma -->
+			<MedicalConditionRef>TRM_003</MedicalConditionRef>
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_005</MedicalConditionRef>
+            <MedicalConditionRef>TRM_007</MedicalConditionRef>
+			<MedicalConditionRef>TRM_006</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_011</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
+            <MedicalConditionRef>TRM_012</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_013</MedicalConditionRef>
+			
+			<MedicalConditionRef>TRM_LIP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_LIB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SRP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PLB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_PCP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KLP</MedicalConditionRef>
+            <MedicalConditionRef>TRM_KCB</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFU</MedicalConditionRef>
+            <MedicalConditionRef>TRM_OFU</MedicalConditionRef>
+            <MedicalConditionRef>TRM_OFH</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
+            <MedicalConditionRef>TRM_BRR</MedicalConditionRef>
+            <MedicalConditionRef>TRM_OFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SPT</MedicalConditionRef>
+            <MedicalConditionRef>TRM_OFT</MedicalConditionRef>
+            <MedicalConditionRef>TRM_MBF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SHC</MedicalConditionRef>
+            <MedicalConditionRef>TRM_MNF</MedicalConditionRef>
+        </MedicalConditions>
+    </GameDBEventVariation>
+	
+	<GameDBEventVariation ID="MOD_JM_EVENT_CLASH">
+        <DescriptionLocID>MOD_JM_EVENT_CLASH_DESC</DescriptionLocID>
+        <EventRef>EVENT_CRASH</EventRef>
+        <PatientCount>8</PatientCount>
+        <DurationHours>10</DurationHours>
+
+        <RequiredDepartmentTypeList>
+            <RequiredDepartmentTypeRef>DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
+        </RequiredDepartmentTypeList>
+
+        <MedicalConditions>
+		    <!-- Trauma -->
+			<MedicalConditionRef>TRM_003</MedicalConditionRef>
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> 
+			<MedicalConditionRef>TRM_005</MedicalConditionRef>
+            <MedicalConditionRef>TRM_007</MedicalConditionRef>
+			<MedicalConditionRef>TRM_006</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_011</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
+            <MedicalConditionRef>TRM_012</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_013</MedicalConditionRef>
+
+            <!-- Ortho -->			
+			<MedicalConditionRef>TRM_CFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_CFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_CFF</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFR</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFH</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFI</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFC</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFU</MedicalConditionRef>
+			<MedicalConditionRef>TRM_SFF</MedicalConditionRef>
+            <MedicalConditionRef>TRM_SFT</MedicalConditionRef>
+        </MedicalConditions>
+    </GameDBEventVariation>
+	
     <!-- epidemic variations -->
 	<GameDBEventVariation ID="EVENT_FOOD_POISONING">
         <DescriptionLocID>EVENT_FOOD_POISONING</DescriptionLocID>
@@ -959,6 +1056,9 @@
 			<RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
 			<RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
+		
+		<LaunchWorldEvent>true</LaunchWorldEvent>
+        <WorldEventType>DLC_WORLD_EVENT_DISEASE_OUTBREAK</WorldEventType>
 
         <MedicalConditions>
 		    <MedicalConditionRef>DIA_PTI</MedicalConditionRef>
@@ -1093,6 +1193,9 @@
         <RequiredDepartmentTypeList>
 			<RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
         </RequiredDepartmentTypeList>
+		
+		<LaunchWorldEvent>true</LaunchWorldEvent>
+        <WorldEventType>DLC_WORLD_EVENT_DISEASE_OUTBREAK</WorldEventType>
 
         <MedicalConditions>
 		    <MedicalConditionRef>DIA_PNAX</MedicalConditionRef>
@@ -1109,6 +1212,57 @@
 			<MedicalConditionRef>DIA_LEGX</MedicalConditionRef>
 		</MedicalConditions>
     </GameDBEventVariation>
+	
+	<GameDBEventVariation ID="MOD_JM_EVENT_EBOLA">
+        <DescriptionLocID>MOD_JM_EVENT_EBOLA_DESC</DescriptionLocID>
+        <EventRef>EVENT_PANDEMIC</EventRef>
+        <PatientCount>18</PatientCount>
+        <DurationHours>20</DurationHours>
+
+        <RequiredDepartmentTypeList>
+		    <RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
+        </RequiredDepartmentTypeList>
+		
+		<LaunchWorldEvent>true</LaunchWorldEvent>
+        <WorldEventType>DLC_WORLD_EVENT_DISEASE_OUTBREAK</WorldEventType>
+
+        <MedicalConditions>
+			<MedicalConditionRef>DIA_018</MedicalConditionRef>
+			<MedicalConditionRef>DIA_023</MedicalConditionRef>
+			<MedicalConditionRef>DIA_INFX</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_046</MedicalConditionRef>
+			<MedicalConditionRef>DIA_046</MedicalConditionRef>
+			<MedicalConditionRef>DIA_046</MedicalConditionRef>
+		</MedicalConditions>
+    </GameDBEventVariation>
+	
+	<GameDBEventVariation ID="MOD_JM_EVENT_ZIKA">
+        <DescriptionLocID>MOD_JM_EVENT_ZIKA_DESC</DescriptionLocID>
+        <EventRef>EVENT_PANDEMIC</EventRef>
+        <PatientCount>18</PatientCount>
+        <DurationHours>20</DurationHours>
+
+        <RequiredDepartmentTypeList>
+			<RequiredDepartmentTypeRef>DPT_INFECTIOUS_DISEASES_DEPARTMENT</RequiredDepartmentTypeRef>
+			<RequiredDepartmentTypeRef>DPT_EMERGENCY</RequiredDepartmentTypeRef>
+        </RequiredDepartmentTypeList>
+
+        <MedicalConditions>
+		    <MedicalConditionRef>DIA_017</MedicalConditionRef>
+			<MedicalConditionRef>DIA_017</MedicalConditionRef>
+			<MedicalConditionRef>DIA_017</MedicalConditionRef>
+			<MedicalConditionRef>DIA_016</MedicalConditionRef>
+			<MedicalConditionRef>DIA_014</MedicalConditionRef>
+			<MedicalConditionRef>DIA_017</MedicalConditionRef>
+			<MedicalConditionRef>DIA_020</MedicalConditionRef>
+			<MedicalConditionRef>DIA_021</MedicalConditionRef>
+			<MedicalConditionRef>DIA_INFX</MedicalConditionRef>
+	        <MedicalConditionRef>DIA_046</MedicalConditionRef>
+			<MedicalConditionRef>DIA_046</MedicalConditionRef>
+		</MedicalConditions>
+    </GameDBEventVariation>
+	
 	
     <!-- disaster variations -->
     <GameDBEventVariation ID="MOD_JM_EVENT_EXPLOSION">
@@ -1986,6 +2140,62 @@
         </MedicalConditionsDisaster>
     </GameDBEventVariation>
 	
+	<GameDBEventVariation ID="MOD_JM_EVENT_COLDWAVE">
+        <DescriptionLocID>MOD_JM_EVENT_COLDWAVE_DESC</DescriptionLocID>
+        <EventRef>EVENT_NATURAL_DISASTER</EventRef>
+        <PatientCount>8</PatientCount>
+        <PatientCountDisaster>4</PatientCountDisaster>
+        <DurationHours>12</DurationHours>
+
+        <RequiredDepartmentTypeList>
+			<RequiredDepartmentTypeRef>DPT_TRAUMATOLOGY_DEPARTMENT</RequiredDepartmentTypeRef>
+        </RequiredDepartmentTypeList>
+
+        <MedicalConditions>
+            <MedicalConditionRef>TRM_019</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_020</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_021</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_022</MedicalConditionRef>
+        </MedicalConditions>
+
+        <MedicalConditionsDisaster>
+            <MedicalConditionRef>TRM_019</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_020</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_021</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_022</MedicalConditionRef>
+        </MedicalConditionsDisaster>
+    </GameDBEventVariation>
+	
+	<GameDBEventVariation ID="MOD_JM_EVENT_SMOG">
+        <DescriptionLocID>MOD_JM_EVENT_SMOG_DESC</DescriptionLocID>
+        <EventRef>EVENT_NATURAL_DISASTER</EventRef>
+        <PatientCount>8</PatientCount>
+        <PatientCountDisaster>4</PatientCountDisaster>
+        <DurationHours>12</DurationHours>
+
+        <RequiredDepartmentTypeList>
+			<RequiredDepartmentTypeRef>DPT_INTERNAL_MEDICINE_DEPARTMENT</RequiredDepartmentTypeRef>
+        </RequiredDepartmentTypeList>
+
+        <MedicalConditions>
+            <MedicalConditionRef>DIA_CFB</MedicalConditionRef>
+			<MedicalConditionRef>DIA_PNM</MedicalConditionRef>
+			<MedicalConditionRef>DIA_BPN</MedicalConditionRef>
+			<MedicalConditionRef>DIA_BES</MedicalConditionRef>
+			<MedicalConditionRef>DIA_SCB</MedicalConditionRef>
+			<MedicalConditionRef>DIA_EMP</MedicalConditionRef>
+			<MedicalConditionRef>DIA_CPD</MedicalConditionRef>
+			<MedicalConditionRef>DIA_ASM</MedicalConditionRef>
+			<MedicalConditionRef>DIA_ASM</MedicalConditionRef>
+        </MedicalConditions>
+
+        <MedicalConditionsDisaster>
+            <MedicalConditionRef>DIA_PNM</MedicalConditionRef>
+			<MedicalConditionRef>DIA_BPN</MedicalConditionRef>
+			<MedicalConditionRef>DIA_BES</MedicalConditionRef>
+        </MedicalConditionsDisaster>
+    </GameDBEventVariation>
+	
 	<!-- 
 	
 	
@@ -1993,159 +2203,162 @@
 	
 	FLU
 	
-    <MedicalConditionRef>DIA_INFX</MedicalConditionRef> INFLUENZA A
-	<MedicalConditionRef>DIA_045</MedicalConditionRef> H1N1 BIRD FLU
-    <MedicalConditionRef>DIA_046</MedicalConditionRef> INFLUENZA B
+            <MedicalConditionRef>DIA_INFX</MedicalConditionRef> INFLUENZA A
+	        <MedicalConditionRef>DIA_045</MedicalConditionRef> H1N1 BIRD FLU
+            <MedicalConditionRef>DIA_046</MedicalConditionRef> INFLUENZA B
 	
 	
 	HEPATITIS
 	
-	<MedicalConditionRef>DIA_HEPAX</MedicalConditionRef> HEPATITIS A
-    <MedicalConditionRef>DIA_HEPBX</MedicalConditionRef> HEPATITIS B
-	<MedicalConditionRef>DIA_044</MedicalConditionRef> HEPATITIS E
+	        <MedicalConditionRef>DIA_HEPAX</MedicalConditionRef> HEPATITIS A
+            <MedicalConditionRef>DIA_HEPBX</MedicalConditionRef> HEPATITIS B
+	        <MedicalConditionRef>DIA_044</MedicalConditionRef> HEPATITIS E
 	
 	TICK-BORNE DISEASES
 	
-	<MedicalConditionRef>DIA_001</MedicalConditionRef> ANAPLASMOSIS
-	<MedicalConditionRef>DIA_002</MedicalConditionRef> EHRLICHIOSIS
-	<MedicalConditionRef>DIA_003</MedicalConditionRef> BOUTONNEUSE FEVER
-	<MedicalConditionRef>DIA_004</MedicalConditionRef> ROCKY MOUNTAIN SPOTTED FEVER
-	<MedicalConditionRef>DIA_005</MedicalConditionRef> COLORADO TICK FEVER
-	<MedicalConditionRef>DIA_006</MedicalConditionRef> PACIFIC COAST TICK FEVER
-	<MedicalConditionRef>DIA_007</MedicalConditionRef> AFRICAN TICK BITE FEVER
-	<MedicalConditionRef>DIA_008</MedicalConditionRef> QUEENSLAND TICK TYPHUS
-	<MedicalConditionRef>DIA_009</MedicalConditionRef> FLINDER ISLAND SPOTTED FEVER
-	<MedicalConditionRef>DIA_010</MedicalConditionRef> JAPANESE SPOTTED FEVER
-	<MedicalConditionRef>DIA_011</MedicalConditionRef> TIBOLA
-	<MedicalConditionRef>DIA_LYDX</MedicalConditionRef> LYME DISEASE
-	<MedicalConditionRef>DIA_TBEX</MedicalConditionRef> TICK-BORNE ENCEPHALITIS
-	<MedicalConditionRef>DIA_BABX</MedicalConditionRef> BABESIOSIS
+	        <MedicalConditionRef>DIA_001</MedicalConditionRef> ANAPLASMOSIS
+	        <MedicalConditionRef>DIA_002</MedicalConditionRef> EHRLICHIOSIS
+	        <MedicalConditionRef>DIA_003</MedicalConditionRef> BOUTONNEUSE FEVER
+	        <MedicalConditionRef>DIA_004</MedicalConditionRef> ROCKY MOUNTAIN SPOTTED FEVER
+	        <MedicalConditionRef>DIA_005</MedicalConditionRef> COLORADO TICK FEVER
+	        <MedicalConditionRef>DIA_006</MedicalConditionRef> PACIFIC COAST TICK FEVER
+	        <MedicalConditionRef>DIA_007</MedicalConditionRef> AFRICAN TICK BITE FEVER
+	        <MedicalConditionRef>DIA_008</MedicalConditionRef> QUEENSLAND TICK TYPHUS
+	        <MedicalConditionRef>DIA_009</MedicalConditionRef> FLINDER ISLAND SPOTTED FEVER
+	        <MedicalConditionRef>DIA_010</MedicalConditionRef> JAPANESE SPOTTED FEVER
+	        <MedicalConditionRef>DIA_011</MedicalConditionRef> TIBOLA
+	        <MedicalConditionRef>DIA_LYDX</MedicalConditionRef> LYME DISEASE
+	        <MedicalConditionRef>DIA_TBEX</MedicalConditionRef> TICK-BORNE ENCEPHALITIS
+	        <MedicalConditionRef>DIA_BABX</MedicalConditionRef> BABESIOSIS
 	
 	MOSQUITO-BORNE DISEASES
 	
-	<MedicalConditionRef>DIA_014</MedicalConditionRef> CHIKUNGUNYA FEVER
-	<MedicalConditionRef>DIA_016</MedicalConditionRef> DENGUE FEVER
-	<MedicalConditionRef>DIA_017</MedicalConditionRef> ZIKA FEVER
-	<MedicalConditionRef>DIA_019</MedicalConditionRef> MALARIA
-	<MedicalConditionRef>DIA_020</MedicalConditionRef> YELLOW FEVER
-	<MedicalConditionRef>DIA_021</MedicalConditionRef> WEST NILE FEVER
+	        <MedicalConditionRef>DIA_014</MedicalConditionRef> CHIKUNGUNYA FEVER
+	        <MedicalConditionRef>DIA_016</MedicalConditionRef> DENGUE FEVER
+	        <MedicalConditionRef>DIA_017</MedicalConditionRef> ZIKA FEVER
+	        <MedicalConditionRef>DIA_019</MedicalConditionRef> MALARIA
+	        <MedicalConditionRef>DIA_020</MedicalConditionRef> YELLOW FEVER
+	        <MedicalConditionRef>DIA_021</MedicalConditionRef> WEST NILE FEVER
 	
 	OTHER ANIMAL OR INSECT BORNE DISEASES
 	
-	<MedicalConditionRef>DIA_012</MedicalConditionRef> RICKETTSIAL
-	<MedicalConditionRef>DIA_015</MedicalConditionRef> Q FEVER
-	<MedicalConditionRef>DIA_018</MedicalConditionRef> EBOLA
-	<MedicalConditionRef>DIA_022</MedicalConditionRef> LASSA FEVER
-	<MedicalConditionRef>DIA_023</MedicalConditionRef> MARBURG
-	<MedicalConditionRef>DIA_024</MedicalConditionRef> LEPTOSPIROSIS
-	<MedicalConditionRef>DIA_032</MedicalConditionRef> HANTAVIRUS PULMONARY SYNDROME (HPS)
-	<MedicalConditionRef>DIA_037</MedicalConditionRef> LYMPHOCYTIC CHORIOMENINGITIS
-	<MedicalConditionRef>DIA_038</MedicalConditionRef> BUBONIC PLAGUE
-	<MedicalConditionRef>DIA_039</MedicalConditionRef> SEPTICEMIC PLAGUE
-	<MedicalConditionRef>DIA_040</MedicalConditionRef> PNEUMONIC PLAGUE
-	<MedicalConditionRef>DIA_042</MedicalConditionRef> RIFT VALLEY FEVER
-	<MedicalConditionRef>DIA_CSDX</MedicalConditionRef> CAT SCRATCH DISEASE
-	<MedicalConditionRef>DIA_TULX</MedicalConditionRef> TULERAEMIA
-	<MedicalConditionRef>DIA_RBFX</MedicalConditionRef> RAT BITE FEVER
-	<MedicalConditionRef>DIA_ATSX</MedicalConditionRef> AMERICAN TRYPANOSOMIAS
-    <MedicalConditionRef>DIA_TXMX</MedicalConditionRef> TOXOPLASMOSIS
-	<MedicalConditionRef>DIA_RABX</MedicalConditionRef> RABIES
-	<MedicalConditionRef>DIA_TPFX</MedicalConditionRef> TYPHUS FEVER
+	        <MedicalConditionRef>DIA_012</MedicalConditionRef> RICKETTSIAL
+	        <MedicalConditionRef>DIA_015</MedicalConditionRef> Q FEVER
+	        <MedicalConditionRef>DIA_018</MedicalConditionRef> EBOLA
+	        <MedicalConditionRef>DIA_022</MedicalConditionRef> LASSA FEVER
+	        <MedicalConditionRef>DIA_023</MedicalConditionRef> MARBURG
+	        <MedicalConditionRef>DIA_024</MedicalConditionRef> LEPTOSPIROSIS
+	        <MedicalConditionRef>DIA_032</MedicalConditionRef> HANTAVIRUS PULMONARY SYNDROME (HPS)
+	        <MedicalConditionRef>DIA_037</MedicalConditionRef> LYMPHOCYTIC CHORIOMENINGITIS
+	        <MedicalConditionRef>DIA_038</MedicalConditionRef> BUBONIC PLAGUE
+	        <MedicalConditionRef>DIA_039</MedicalConditionRef> SEPTICEMIC PLAGUE
+	        <MedicalConditionRef>DIA_040</MedicalConditionRef> PNEUMONIC PLAGUE
+	        <MedicalConditionRef>DIA_042</MedicalConditionRef> RIFT VALLEY FEVER
+	        <MedicalConditionRef>DIA_CSDX</MedicalConditionRef> CAT SCRATCH DISEASE
+	        <MedicalConditionRef>DIA_TULX</MedicalConditionRef> TULERAEMIA
+	        <MedicalConditionRef>DIA_RBFX</MedicalConditionRef> RAT BITE FEVER
+	        <MedicalConditionRef>DIA_ATSX</MedicalConditionRef> AMERICAN TRYPANOSOMIAS
+            <MedicalConditionRef>DIA_TXMX</MedicalConditionRef> TOXOPLASMOSIS
+	        <MedicalConditionRef>DIA_RABX</MedicalConditionRef> RABIES
+	        <MedicalConditionRef>DIA_TPFX</MedicalConditionRef> TYPHUS FEVER
 	
 	WATER OR FOOD-BORNE DISEASES
 	
-	<MedicalConditionRef>DIA_013</MedicalConditionRef> BRUCELLOSIS
-	<MedicalConditionRef>DIA_TYFX</MedicalConditionRef> TYPHOID FEVER
-	<MedicalConditionRef>DIA_CLCX</MedicalConditionRef> CHOLERA
+	        <MedicalConditionRef>DIA_013</MedicalConditionRef> BRUCELLOSIS
+	        <MedicalConditionRef>DIA_TYFX</MedicalConditionRef> TYPHOID FEVER
+	        <MedicalConditionRef>DIA_CLCX</MedicalConditionRef> CHOLERA
 	
 	MISCELLANOUS
 	
-	<MedicalConditionRef>DIA_025</MedicalConditionRef> CLOSTRIDIUM DIFFICILE INFECTION
-	<MedicalConditionRef>DIA_026</MedicalConditionRef> VALLEY FEVER
-	<MedicalConditionRef>DIA_027</MedicalConditionRef> COVID-19
-	<MedicalConditionRef>DIA_028</MedicalConditionRef> MERS
-	<MedicalConditionRef>DIA_029</MedicalConditionRef> SARS
-	<MedicalConditionRef>DIA_030</MedicalConditionRef> RESPIRATORY CRYPTO
-	<MedicalConditionRef>DIA_031</MedicalConditionRef> INTESTINAL CRYPTO
-	<MedicalConditionRef>DIA_033</MedicalConditionRef> NOROVIRUS
-	<MedicalConditionRef>DIA_034</MedicalConditionRef> ROTAVIRUS A
-	<MedicalConditionRef>DIA_035</MedicalConditionRef> RSV	
-	<MedicalConditionRef>DIA_041</MedicalConditionRef> NIPAH INFECTION
-	<MedicalConditionRef>DIA_043</MedicalConditionRef> RELAPSING FEVER
-	<MedicalConditionRef>DIA_TBCX</MedicalConditionRef> TUBERCULOSIS 
-	<MedicalConditionRef>DIA_PNAX</MedicalConditionRef> PULMONARY ANTHRAX
-    <MedicalConditionRef>DIA_PTSX</MedicalConditionRef> PERTUSSIS
-	<MedicalConditionRef>DIA_LEGX</MedicalConditionRef> LEGIONNARES DISEASE
-	<MedicalConditionRef>DIA_MUMX</MedicalConditionRef> MUMPS
+	        <MedicalConditionRef>DIA_025</MedicalConditionRef> CLOSTRIDIUM DIFFICILE INFECTION
+	        <MedicalConditionRef>DIA_026</MedicalConditionRef> VALLEY FEVER
+	        <MedicalConditionRef>DIA_027</MedicalConditionRef> COVID-19
+	        <MedicalConditionRef>DIA_028</MedicalConditionRef> MERS
+	        <MedicalConditionRef>DIA_029</MedicalConditionRef> SARS
+	        <MedicalConditionRef>DIA_030</MedicalConditionRef> RESPIRATORY CRYPTO
+	        <MedicalConditionRef>DIA_031</MedicalConditionRef> INTESTINAL CRYPTO
+	        <MedicalConditionRef>DIA_033</MedicalConditionRef> NOROVIRUS
+	        <MedicalConditionRef>DIA_034</MedicalConditionRef> ROTAVIRUS A
+	        <MedicalConditionRef>DIA_035</MedicalConditionRef> RSV	
+	        <MedicalConditionRef>DIA_041</MedicalConditionRef> NIPAH INFECTION
+	        <MedicalConditionRef>DIA_043</MedicalConditionRef> RELAPSING FEVER
+	        <MedicalConditionRef>DIA_TBCX</MedicalConditionRef> TUBERCULOSIS 
+	        <MedicalConditionRef>DIA_PNAX</MedicalConditionRef> PULMONARY ANTHRAX
+            <MedicalConditionRef>DIA_PTSX</MedicalConditionRef> PERTUSSIS
+	        <MedicalConditionRef>DIA_LEGX</MedicalConditionRef> LEGIONNARES DISEASE
+	        <MedicalConditionRef>DIA_MUMX</MedicalConditionRef> MUMPS
 	
 	
 	
 	#########################TRAUMATOLOGY DIAG:#########################
 	
+	        <MedicalConditionRef>TRM_005</MedicalConditionRef> GUNSHOT - UPPER ABDOMEN
+            <MedicalConditionRef>TRM_007</MedicalConditionRef> GUNSHOT - THORAX
+	
 	MISCELLANOUS
 	
-	<MedicalConditionRef>TRM_003</MedicalConditionRef> HEPATOSPLENIC LACERATION
-    <MedicalConditionRef>TRM_004</MedicalConditionRef> SPLENOPANCREATIC LACERATION
-	<MedicalConditionRef>TRM_025</MedicalConditionRef> DIRECT LIGHTNING STRIKE
-	<MedicalConditionRef>TRM_033</MedicalConditionRef> SUNBURN
+	        <MedicalConditionRef>TRM_003</MedicalConditionRef> HEPATOSPLENIC LACERATION
+            <MedicalConditionRef>TRM_004</MedicalConditionRef> SPLENOPANCREATIC LACERATION
+	        <MedicalConditionRef>TRM_025</MedicalConditionRef> DIRECT LIGHTNING STRIKE
+	        <MedicalConditionRef>TRM_033</MedicalConditionRef> SUNBURN
 	
 	TRAUMATOLOGY BALISTIC - HIGHSPEED OBJECT HIT :
 	
-	<MedicalConditionRef>TRM_006</MedicalConditionRef>
-	<MedicalConditionRef>TRM_008</MedicalConditionRef>
-	<MedicalConditionRef>TRM_009</MedicalConditionRef>
-	<MedicalConditionRef>TRM_010</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_006</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_008</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_009</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_010</MedicalConditionRef>
 	
 	SHATTERED:
 	
-	<MedicalConditionRef>TRM_011</MedicalConditionRef>
-	<MedicalConditionRef>TRM_014</MedicalConditionRef>
-	<MedicalConditionRef>TRM_015</MedicalConditionRef>
-	<MedicalConditionRef>TRM_016</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_011</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_014</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_015</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_016</MedicalConditionRef>
 	
 	STAB:
 	
-	<MedicalConditionRef>TRM_012</MedicalConditionRef>
-	<MedicalConditionRef>TRM_013</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_012</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_013</MedicalConditionRef>
 	
 	EXPLOSION:
 	
-	<MedicalConditionRef>TRM_017</MedicalConditionRef>
-	<MedicalConditionRef>TRM_018</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_017</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_018</MedicalConditionRef>
 	
 	ELECTRIC BURN:
 	
-	<MedicalConditionRef>TRM_026</MedicalConditionRef> 
-	<MedicalConditionRef>TRM_032</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_026</MedicalConditionRef> 
+	        <MedicalConditionRef>TRM_032</MedicalConditionRef>
 	
 	THERMAL BURN:
 	
-	<MedicalConditionRef>TRM_029</MedicalConditionRef>
-	<MedicalConditionRef>TRM_030</MedicalConditionRef>
-	<MedicalConditionRef>TRM_031</MedicalConditionRef>
-	
+	        <MedicalConditionRef>TRM_029</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_030</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_031</MedicalConditionRef>
+	        
 	CHEMICAL BURN:
 	
-	<MedicalConditionRef>TRM_023</MedicalConditionRef>
-	<MedicalConditionRef>TRM_024</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_023</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_024</MedicalConditionRef>
 	
 	RADIATION BURN:
 	
-	<MedicalConditionRef>TRM_027</MedicalConditionRef>
-	<MedicalConditionRef>TRM_028</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_027</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_028</MedicalConditionRef>
 	
 	FROSTBITE:
 	
-	<MedicalConditionRef>TRM_019</MedicalConditionRef>
-	<MedicalConditionRef>TRM_020</MedicalConditionRef>
-	<MedicalConditionRef>TRM_021</MedicalConditionRef>
-	<MedicalConditionRef>TRM_022</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_019</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_020</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_021</MedicalConditionRef>
+	        <MedicalConditionRef>TRM_022</MedicalConditionRef>
 	
 	BITES:
 	
-	<MedicalConditionRef>TRM_034</MedicalConditionRef> VENOMOUS SPIDER
-	<MedicalConditionRef>TRM_035</MedicalConditionRef> RATTLESNAKE
-	<MedicalConditionRef>TRM_036</MedicalConditionRef> COPPERHEAD
+	        <MedicalConditionRef>TRM_034</MedicalConditionRef> VENOMOUS SPIDER
+	        <MedicalConditionRef>TRM_035</MedicalConditionRef> RATTLESNAKE
+	        <MedicalConditionRef>TRM_036</MedicalConditionRef> COPPERHEAD
 	
 	#########################EMERGENCY DIAG:#########################
 	

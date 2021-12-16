@@ -23,7 +23,7 @@
 			
             <GameDBLocalizedString>      
 			<LocID>EVENT_NATURAL_DISASTER</LocID>          
-			<Text>Disaster</Text>  
+			<Text>Disasters</Text>  
 			</GameDBLocalizedString>
 			
 			<!-- ########### EVENTS ########### -->
@@ -41,27 +41,27 @@
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_VOLCANIC_ERUPTION_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! A volcano has erupted in a nearby province, and has engulfed 3 cities in ash and lava, causing major damages to infrastructure. The National Disaster Response team has also reported that several infectious diseases has leaked into the water supply from leaking sewage pipes. Precautions should be taken incase of a epidemic and a surge of trauma patients. </Text>
+			<Text>BREAKING NEWS! A volcanic eruption in a nearby province/state, and has engulfed 3 cities in ash and lava. The National Disaster Response team has also reported that several infectious diseases has leaked into the water supply from leaking sewage pipes. Precautions should be taken incase of a epidemic and a surge of trauma patients. </Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_LANDSLIDE_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! The thunderstorm currently approaching has caused a major landslide to the east of the city. The Disaster Response Team will be transporting all patients to nearby hospitals.</Text>
+			<Text>BREAKING NEWS! The thunderstorm currently approaching has caused a major landslide to the west of the city. The Disaster Response Team will be transporting all patients to nearby hospitals.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_DAM_BURST_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! A major dam has collapsed after heavy rainfall and a deteriorating concrete wall. Several Cities has been flooded, and has caused 816276 injuries and killed over 2600 people as of now. Many Helicopters and Ambulances has begun to transport patients to hospitals.</Text>
+			<Text>BREAKING NEWS! A major dam has collapsed after severe deterioration of the concrete wall. Several cities has been flooded, and has caused over 800k injuries and killed over 2.6k Many Helicopters and ambulances has begun to transport patients to hospitals.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_FIRE1_DESC</LocID>         		                    
-			<Text>A big fire has occured at a office building due to a faulty wire. Firefighters are evacuating the building. Your hospital should prepare for burn patients. </Text>
+			<Text>A massive fire has broken out at a exhibition tower. Firefighters are evacuating the building. Your hospital should prepare for burn patients. </Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_FIRE2_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! A major fire has erupted in a International Airport. An explosion may occur, if the gas leak happens. Firefighters will be bringing patients to hospital.</Text>
+			<Text>BREAKING NEWS! A major fire has broken out in an International Airport. An explosion may occur, if a gas leak happens. Firefighters will be bringing patients to hospital.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
@@ -71,19 +71,29 @@
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_HURRICANE1_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! A category 3 hurricane has hit the city and many other ones. Hospitals should prepare for the potential of a outbreak and a increase in casualties.</Text>
+			<Text>BREAKING NEWS! A category 3 hurricane has the east coast of the nation. Hospitals should prepare for the potential of a outbreak and a increase in casualties.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_TORNADO1_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! A EF 3 tornado has torn down a neighbouring town. Dozens of buildings have been torned down and many are injured or dead. Helicopters will transport excess patients to your city. Hospitals in the city should prepare for trauma patients. </Text>
+			<Text>BREAKING NEWS! A EF 3 tornado has torn down a neighbouring town. Dozens of buildings have been torned down and casualties are being reported. Medical Helicopters will transport excess patients to your city. </Text>
+			</GameDBLocalizedString>
+			
+			<GameDBLocalizedString>      
+			<LocID>MOD_JM_EVENT_COLDWAVE_DESC</LocID>         		                    
+			<Text>The National Weather Association has issued a warning for an incoming coldwave across the northern states/provinces. Public Health officials has advised wearing thick layer clothing and buying heaters.</Text>
+			</GameDBLocalizedString>
+			
+			<GameDBLocalizedString>      
+			<LocID>MOD_JM_EVENT_SMOG_DESC</LocID>         		                    
+			<Text>Smog from nearby burning of forests for farmland has significantly affected the country's health. The CDC now advises for people to wear face coverings to prevent significant lung damage. </Text>
 			</GameDBLocalizedString>
 			
 			<!-- Accident -->
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_AEROPLANE_CRASH_DESC</LocID>         		                    
-		    <Text>BREAKING NEWS! A Turkish Airliner has crashed into a building. Several fires have broken out and many are dead or injured. Emergency Services are on the scene and the most heavily injured will be transported to the nearest hospital.</Text>
+		    <Text>BREAKING NEWS! A Turkish Airliner has crashed into luxury office building. Fires have broken out and many are dead or injured. Emergency Services are on the scene and the most heavily injured will be transported to the nearest hospital.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
@@ -93,12 +103,12 @@
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_LORRY_ACCIDENT_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! A lorry/truck has crashed into a restaurant. Ambulances are transporting all patients to hospitals. The driver has been found dead, it is suspected the driver was drunk driving.</Text>
+			<Text>BREAKING NEWS! A lorry/truck has crashed into a restaurant down 123 Street Avenue. Ambulances are transporting all patients to hospitals. The driver has been found dead, it is suspected the driver was drunk driving.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_SINKING_SHIP_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! The M.S Sarvavina cruise ship has started to sink after crashing into a rock. Chaos ensues onboard as passengers and crew scramble to get on lifeboats. Hospitals nearby should prepare for a influx of moderately injured patients.</Text>
+			<Text>BREAKING NEWS! The M.S Sarvavina cruise ship has started to sink after crashing into a rock. Chaos has ensued onboard as passengers and crew scramble to get on lifeboats. Hospitals nearby should prepare for a influx of moderately injured patients.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
@@ -108,17 +118,17 @@
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_BUILDCOLLAPSE1_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! The Gardens Condominium has unknowningly collapsed, several people has been found dead. Civillians nearby has been injured and will be transported to hospital.</Text>
+			<Text>BREAKING NEWS! The Gardens Condominium has unknowningly collapsed, dozens people has been found dead. Civillians nearby has been injured and will be transported to hospital.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_BUS_ACCIDENT_DESC</LocID>         		                    
-			<Text>A bus travelling to the neighbouring city has hit a group of motorcyclers. Although, no one on the bus has been injured, several motorcyclists have been found in severe wounds.</Text>
+			<Text>A bus travelling to the neighbouring city has hit a group of motorcyclers. Although, no one on the bus has been injured, several motorcyclists have been found in severe condition.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_CHAIN_COLLISION_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! The fog has caused a chain collision at a highway. 4 people have been found dead and the death toll is expected to rise. Hospitals should prepare for a influx of patients.</Text>
+			<Text>BREAKING NEWS! A fog on the outskirts of town has caused a chain collision at the Levan highway. So far 4 people have been confirmed dead. Emergency services are on route to transport patients.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
@@ -131,11 +141,21 @@
 			<Text>BREAKING NEWS! A chemical factory has leaked methanol and several other dangerous chemicals. Residents nearby are advised to stay indoors, aswell as close doors and windows. If you report any symptoms of any kind of toxicity, report to the nearest hospital immediately.</Text>
 			</GameDBLocalizedString>
 			
+			<GameDBLocalizedString>      
+			<LocID>MOD_JM_EVENT_SHOOTING_DESC</LocID>         		                    
+			<Text>BREAKING NEWS! St Illstan University has reported shots being fired by 2 armed students. A ton has been injured by the shooting, the suspects have been since arrested and all injured will be transported to your hospital.</Text>
+			</GameDBLocalizedString>
+			
+			<GameDBLocalizedString>      
+			<LocID>MOD_JM_EVENT_CLASH_DESC</LocID>         		                    
+			<Text>BREAKING NEWS! A clash between supporters of the People's Equality Party and the United Alliance Party in Green Park has resulted in mass casualties. Riot police has been deployed then and all injured will be transported to hospital.</Text>
+			</GameDBLocalizedString>
+			
 			<!-- Disease Outbreak -->
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_FOOD_POISONING1_DESC</LocID>         		                    
-			<Text>A famous chip/crisp brand has been linked to infections of the Clostridium Botulinum bacteria. Many have been pulled off from the shelves and the factory producing the goods will be investigated.</Text>
+			<Text>A famous chip/crisp brand has been linked to infections of the Clostridium Botulinum bacteria. Many have been pulled off from the shelves and the factories producing the goods will be investigated.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
@@ -145,17 +165,17 @@
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_FOOD_POISONING3_DESC</LocID>         		                    
-			<Text>Recently, a local restaurant downtown featured on the show 'Kitchen Nightmares'. Host, Gordon Ramsay reveals that the ingredients were moldy and the kitchen infested with rats. Since then, the restaurant has been shut down. Hospitals should prepare for a influx of food poisoning cases.</Text>
+			<Text>Recently, a local restaurant downtown was featured on the show 'Kitchen Nightmares'. Host, Gordon Ramsay reveals that the ingredients were moldy and the kitchen infested with rats. Since then, the restaurant has been shut down. Hospitals should prepare for a influx of food poisoning cases.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_FOOD_POISONING4_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! A processing plant has drained their sewage into a major water reservoir and has caused water contamination in many states/provinces. The owner of the processing plant has been arrested and fined along with their executives. Hospitals should expect more diseases and poisonings.</Text>
+			<Text>BREAKING NEWS! A processing plant has drained their sewage into a major water reservoir, causing water contamination in the region. The owner of the processing plant has been arrested and fined along with their executives. Hospitals should expect more diseases and poisonings.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_EPIDEMIC1_DESC</LocID>         		                    
-			<Text>BREAKING NEWS! Chimpanzees at a zoo has been found infecting people with several diseases, the government has closed down the zoo for disinfection. The CDC has managed to track down several people exposed to the Chimpanzees, and they have been found travelling to neighbouring cities. This may result in a epidemic in the province/state.</Text>
+			<Text>BREAKING NEWS! Chimpanzees at a zoo has been found infecting people with several diseases, the regional mayor has closed down the zoo for disinfection. The CDC has managed to track down several people exposed to the Chimpanzees, but unfortunately have left for other towns. This may result in a epidemic in the province/state.</Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
@@ -181,6 +201,16 @@
 			<GameDBLocalizedString>      
 			<LocID>MOD_JM_EVENT_BIOTERRORIST1_DESC</LocID>         		                    
 			<Text>BREAKING NEWS! A bioterrorist attack has just occured, and many may have been infected by several unknown diseases. The CDC has immediately quarantined many individuals and has issued high alert to neighbouring hospitals. Hospitals should prepare for an outbreak of a unknown disease.</Text>
+			</GameDBLocalizedString>
+			
+			<GameDBLocalizedString>      
+			<LocID>MOD_JM_EBOLA_DESC</LocID>         		                    
+			<Text>Past Event: September 2014. First case of Ebola has been reported in the US. Mass panic across social medias have been reported. People that have been in close contact or have been in West African countries have now been sent for screening.</Text>
+			</GameDBLocalizedString>
+			
+			<GameDBLocalizedString>      
+			<LocID>MOD_JM_EVENT_ZIKA_DESC</LocID>         		                    
+			<Text>Past Event: January 2016. The outbreak of Zika in Brazil has started rising significantly, over a dozen cases have now been reported in Rio de Janeiro. A public health emergency has been declared since. Hospitals should be ready for increase of patients.</Text>
 			</GameDBLocalizedString>
 			
 			<!-- ########### News ########### -->
@@ -247,12 +277,12 @@
 
             <GameDBLocalizedString>      
 			<LocID>MOD_WORLD_EVENT_KAREN_STRIKES</LocID>         		                    
-			<Text>A Karen has wrote a bad review about your hospital, causing {1}% less patients to come. </Text>
+			<Text>Karen has wrote a bad review about your hospital, causing {1}% less patients to come. </Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
 			<LocID>MOD_WORLD_EVENT_KAREN_STRIKES_TEXT</LocID>         		                    
-			<Text>A Karen has wrote a bad review about your hospital, causing {1}% less patients to come. </Text>
+			<Text>Karen has wrote a bad review about your hospital, causing {1}% less patients to come. </Text>
 			</GameDBLocalizedString>
 			
 			<GameDBLocalizedString>      
